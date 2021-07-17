@@ -10,5 +10,13 @@
     "hhvm/hhvm-autoload": "^3.2",
     "hhvm/hhast": "^4.64",
     "hhvm/hacktest": "^2.2"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "rm vendor/autoload.php vendor/composer/*.php"
+    ],
+    "post-update-cmd": [
+      "rm vendor/autoload.php vendor/composer/*.php"
+    ]
   }
 }
