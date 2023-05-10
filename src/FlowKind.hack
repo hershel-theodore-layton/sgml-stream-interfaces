@@ -2,12 +2,6 @@
 namespace HTL\SGMLStreamInterfaces;
 
 /**
- * A Flow that doesn't have a kind yet. You can pass this Flow anywhere.
- * If you are writing a Flow class, @see `cast_to_chameleon__DO_NOT_USE()`.
- */
-type Chameleon<+T as Flow> = Descendant<Init<Successor<T>>>;
-
-/**
  * This flow kind is intended for Flow objects that get passed from parent to
  * child. This is the "classic Flow" that was around the earliest.
  *
@@ -49,6 +43,12 @@ newtype Init<+T as Flow> as T = T;
  * ```
  */
 newtype Successor<+T as Flow> as T = T;
+
+/**
+ * A Flow that doesn't have a kind yet. You can pass this Flow anywhere.
+ * If you are writing a Flow class, @see `cast_to_chameleon__DO_NOT_USE()`.
+ */
+type Chameleon<+T as Flow> = Descendant<Init<Successor<T>>>;
 
 /**
  * There must be some way to convert a newly constructed Flow (without a kind)
