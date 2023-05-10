@@ -19,7 +19,7 @@ jobs:
           - '4.153'
           - latest
           - nightly
-    runs-on: ${{matrix.os}}-latest
+    runs-on: ${{matrix.os}}-20.04
     steps:
       - uses: actions/checkout@v2
       - name: Create branch for version alias
