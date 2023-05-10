@@ -14,5 +14,8 @@ interface Streamable extends XHPChild {
    * or thrown. Implementations may not insert content after the method has
    * returned or thrown.
    */
-  public function placeIntoSnippetStream(SnippetStream $stream): void;
+  public function placeIntoSnippetStream(
+    SnippetStream $stream,
+    Init<Flow> $init_flow,
+  ): void;
 }

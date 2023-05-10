@@ -2,6 +2,8 @@
 namespace HTL\SGMLStreamInterfaces;
 
 /**
+ * @deprecated Use ReusableRenderer instead.
+ *
  * Kick-starts the process of rendering an SGML tree to a Consumer. A Renderer
  * may decide to be non-reusable. In which case, it must document as such.
  */

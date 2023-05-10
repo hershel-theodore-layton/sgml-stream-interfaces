@@ -38,5 +38,5 @@ interface SnippetStream {
    * be inserted into the new SnippetStream using the method
    * Streamable->placeIntoSnippetStream().
    */
-  public function streamOf(Streamable $streamable): this;
+  public function streamOf(Streamable $streamable, Init<Flow> $init_flow): this;
 }
