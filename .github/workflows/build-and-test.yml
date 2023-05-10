@@ -17,8 +17,7 @@ jobs:
           - '4.102'
           - '4.128'
           - '4.153'
-          - latest
-          - nightly
+          - '4.168'
     runs-on: ${{matrix.os}}-20.04
     steps:
       - uses: actions/checkout@v2
