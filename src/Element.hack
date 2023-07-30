@@ -19,7 +19,7 @@ interface Element extends ToSGMLStringAsync {
    * value has been assigned, no behavior is specified.
    */
   <<HHVMSignature('$xhp->:prop')>>
-  public function getAttribute(string $attr): mixed;
+  public function getAttribute(string $attr)[]: mixed;
 
   /**
    * Returns the direct children of an Element. If an element has no children,
