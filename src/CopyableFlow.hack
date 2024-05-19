@@ -17,5 +17,5 @@ interface CopyableFlow extends WritableFlow {
    * the current instance. Implementations may decide to disallow modification
    * of the original instance after a copy has been made.
    */
-  public function makeCopyForChild(): this;
+  public function makeCopyForChild()[write_props]: this;
 }

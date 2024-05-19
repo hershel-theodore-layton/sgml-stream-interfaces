@@ -10,5 +10,5 @@ interface FlowException {
   /**
    * Must return the $key passed to the method which threw the exception.
    */
-  public function getKey(): string;
+  public function getKey()[]: string;
 }

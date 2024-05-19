@@ -15,5 +15,5 @@ interface ReusableRenderer {
     Descendant<CopyableFlow> $descendant_flow,
     Init<Flow> $init_flow,
     Successor<WritableFlow> $successor_flow,
-  ): Awaitable<void>;
+  )[defaults]: Awaitable<void>;
 }

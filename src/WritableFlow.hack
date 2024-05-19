@@ -13,7 +13,7 @@ interface WritableFlow extends Flow {
    * and $value must be ignored. Implementations may throw an exception if the
    * format of $key is not valid to their own specification.
    */
-  public function assignVariable(string $key, mixed $value): void;
+  public function assignVariable(string $key, mixed $value)[write_props]: void;
   /**
    * Identical to assignVariable, which the exception of the case of multiple
    * calls with the same $key. If assignVariable or declareConstant have been
@@ -21,5 +21,5 @@ interface WritableFlow extends Flow {
    * ignored. Implementations may throw an exception if the format of $key is
    * not valid to their own specification.
    */
-  public function declareConstant(string $key, mixed $value): void;
+  public function declareConstant(string $key, mixed $value)[write_props]: void;
 }

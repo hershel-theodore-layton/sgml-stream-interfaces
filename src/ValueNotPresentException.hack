@@ -2,6 +2,6 @@
 namespace HTL\SGMLStreamInterfaces;
 
 /**
- * @see Flow->get().
+ * @see `Flow->getx()`.
  */
 interface ValueNotPresentException extends FlowException {}

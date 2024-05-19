@@ -12,7 +12,7 @@ interface Snippet {
    * method may not be invoked more than once. Implementations are not required
    * to behave correctly when this method is called more than once.
    */
-  public function primeAsync(Descendant<CopyableFlow> $flow): Awaitable<void>;
+  public function primeAsync(Descendant<CopyableFlow> $flow)[defaults]: Awaitable<void>;
   /**
    * Is called when it is your turn to stream bytes to the consumer.
    * Implementations may not call methods on $consumer after the returned
@@ -32,5 +32,5 @@ interface Snippet {
   public function feedBytesToConsumerAsync(
     Consumer $consumer,
     Successor<WritableFlow> $successor_flow,
-  ): Awaitable<void>;
+  )[defaults]: Awaitable<void>;
 }

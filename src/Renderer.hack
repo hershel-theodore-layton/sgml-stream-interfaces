@@ -15,5 +15,5 @@ interface Renderer {
   public function renderAsync(
     Consumer $consumer,
     CopyableFlow $flow,
-  ): Awaitable<void>;
+  )[defaults]: Awaitable<void>;
 }

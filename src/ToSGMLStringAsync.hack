@@ -24,5 +24,5 @@ interface ToSGMLStringAsync extends XHPChild {
    * in SGML contexts, not just HTML contexts. The name was chosen for easier
    * interop with xhp-lib.
    */
-  public function toHTMLStringAsync(): Awaitable<string>;
+  public function toHTMLStringAsync()[defaults]: Awaitable<string>;
 }

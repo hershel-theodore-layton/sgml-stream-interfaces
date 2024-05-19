@@ -20,23 +20,23 @@ interface Consumer {
   /**
    * Is called with the next bytes of content.
    */
-  public function consumeAsync(string $bytes): Awaitable<void>;
+  public function consumeAsync(string $bytes)[defaults]: Awaitable<void>;
   /**
    * Is called when the author of XHP document explicitly requested a flush to
    * happen at this point in the stream. This is merely a suggestion which may
    * be ignored.
    */
-  public function flushAsync(): Awaitable<void>;
+  public function flushAsync()[defaults]: Awaitable<void>;
   /**
    * Is called when the next Snippet is not yet ready and is being awaited.
    * Suggestion: This might be a good time to flush buffers to the network.
    */
-  public function receiveWaitNotificationAsync(): Awaitable<void>;
+  public function receiveWaitNotificationAsync()[defaults]: Awaitable<void>;
   /**
    * Is called when the current document is complete and all content has been
    * passed to consumeAsync. This method is only called once per document.
    * Implementations which document that they may only consume a single document
    * are not required to behave correctly after this method is called.
    */
-  public function theDocumentIsCompleteAsync(): Awaitable<void>;
+  public function theDocumentIsCompleteAsync()[defaults]: Awaitable<void>;
 }

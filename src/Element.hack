@@ -25,7 +25,7 @@ interface Element extends ToSGMLStringAsync {
    * Returns the direct children of an Element. If an element has no children,
    * an empty vec must be returned.
    */
-  protected function getChildren(): vec<XHPChild>;
+  protected function getChildren()[]: vec<XHPChild>;
 
   /**
    * Must return all assigned data- and aria- attributes and all data- and aria-
@@ -34,7 +34,7 @@ interface Element extends ToSGMLStringAsync {
    * attribute has a non arraykey value, either an exception must be thrown, the
    * value must be cast to an arraykey, or the value must be filtered out.
    */
-  protected function getDataAndAriaAttributes(): dict<string, arraykey>;
+  protected function getDataAndAriaAttributes()[]: dict<string, arraykey>;
 
   /**
    * Must return all assigned declared attributes and all declared attributes
@@ -42,5 +42,5 @@ interface Element extends ToSGMLStringAsync {
    * assigned value, the assigned value must be used. Declared aria- and data-
    * attributes must be filtered out.
    */
-  protected function getDeclaredAttributes(): dict<string, nonnull>;
+  protected function getDeclaredAttributes()[]: dict<string, nonnull>;
 }

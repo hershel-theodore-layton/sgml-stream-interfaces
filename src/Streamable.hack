@@ -17,5 +17,5 @@ interface Streamable extends XHPChild {
   public function placeIntoSnippetStream(
     SnippetStream $stream,
     Init<Flow> $init_flow,
-  ): void;
+  )[defaults]: void;
 }

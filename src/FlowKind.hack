@@ -71,6 +71,6 @@ type Chameleon<+T as Flow> = Descendant<Init<Successor<T>>>;
  * }
  * ```
  */
-function cast_to_chameleon__DO_NOT_USE<T as Flow>(T $t): Chameleon<T> {
+function cast_to_chameleon__DO_NOT_USE<T as Flow>(T $t)[]: Chameleon<T> {
   return $t;
 }

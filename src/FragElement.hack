@@ -15,5 +15,5 @@ interface FragElement {
    * Returns the direct children of an Element. If an element has no children,
    * an empty vec must be returned.
    */
-  public function getFragChildren(): vec<XHPChild>;
+  public function getFragChildren()[]: vec<XHPChild>;
 }

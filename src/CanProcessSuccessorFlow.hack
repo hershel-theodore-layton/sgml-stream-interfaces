@@ -2,5 +2,7 @@
 namespace HTL\SGMLStreamInterfaces;
 
 interface CanProcessSuccessorFlow {
-  public function processSuccessorFlow(Successor<WritableFlow> $flow): void;
+  public function processSuccessorFlow(
+    Successor<WritableFlow> $flow,
+  )[defaults]: void;
 }

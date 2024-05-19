@@ -21,18 +21,18 @@ interface Flow {
    * calls must yield a value, but this may not be the same value if the
    * variable was reassigned.
    */
-  public function get(string $key): mixed;
+  public function get(string $key)[]: mixed;
   /**
    * Identical to get, with the exception of the case in which a variable or
    * constant is not present. Implementations must throw a
    * ValueNotPresentException when a variable or constant is not present.
    */
-  public function getx(string $key): mixed;
+  public function getx(string $key)[]: mixed;
   /**
    * Returns true when a variable or constant is present, false otherwise. Once
    * true has been returned for a certain key, all subsequent calls for the same
    * key must always return true. This results from the requirement that
    * constants and variables may not be unset.
    */
-  public function has(string $key): bool;
+  public function has(string $key)[]: bool;
 }
