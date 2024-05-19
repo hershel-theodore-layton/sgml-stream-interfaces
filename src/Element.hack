@@ -6,7 +6,7 @@ use type XHPChild;
 /**
  * Represents an SGML node in an SGML tree.
  */
-interface Element extends ToSGMLStringAsync {
+interface Element extends ToSGMLStringAsync, Streamable {
   /**
    * Emitted by HHVM from member selection involving `XHP_class_name` expression.
    * `$xhp->:prop` is emitted as `$xhp->getAttribute('prop')`.
