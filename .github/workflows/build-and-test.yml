@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Create branch for version alias
         run: |
-          git config --global --add safe.directory /__w/sgml-stream-interfaces/sgml-stream-interfaces
+          git config --global --add $(pwd)
           git checkout -b CI_current_pull_request
       - uses: hershel-theodore-layton/actions/hack-lint-test@master
         with:
