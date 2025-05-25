@@ -48,7 +48,7 @@ newtype Successor<+T as Flow> as T = T;
  * A Flow that doesn't have a kind yet. You can pass this Flow anywhere.
  * If you are writing a Flow class, @see `cast_to_chameleon__DO_NOT_USE()`.
  */
-type Chameleon<+T as Flow> = Descendant<Init<Successor<T>>>;
+type Chameleon<+T> = Descendant<Init<Successor<T>>>;
 
 /**
  * There must be some way to convert a newly constructed Flow (without a kind)
