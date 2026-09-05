@@ -13,7 +13,7 @@ namespace HTL\SGMLStreamInterfaces;
  * All these methods: consumeAsync, flushAsync, receiveWaitNotificationAsync,
  * theDocumentIsCompleteAsync, must not be called concurrently with any method
  * from this list. The Awaitable returned by the method must resolve before the
- * next call is can be made. Implementations are therefore not required to
+ * next call can be made. Implementations are therefore not required to
  * behave correctly when any of these methods are called concurrently.
  */
 interface Consumer {
@@ -22,7 +22,7 @@ interface Consumer {
    */
   public function consumeAsync(string $bytes)[defaults]: Awaitable<void>;
   /**
-   * Is called when the author of XHP document explicitly requested a flush to
+   * Is called when the author of an XHP document explicitly requested a flush to
    * happen at this point in the stream. This is merely a suggestion which may
    * be ignored.
    */

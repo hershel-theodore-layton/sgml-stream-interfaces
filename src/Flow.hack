@@ -9,7 +9,7 @@ namespace HTL\SGMLStreamInterfaces;
  * may only be declared once. Variables may be assigned many times. Assigning
  * to a variable that does not yet exist, will also declare this variable.
  * Variables and constants have string names (keys). Implementations may choose
- * to restrict what is a considered a valid key for a variable or a constant.
+ * to restrict what is considered a valid key for a variable or a constant.
  * Variables and constants can not be unset after having been assigned or
  * declared. Users which want to unset a variable may assign null to it.
  */

@@ -3,7 +3,8 @@ namespace HTL\SGMLStreamInterfaces;
 
 /**
  * This flow kind is intended for Flow objects that get passed from parent to
- * child. This is the "classic Flow" that was around the earliest.
+ * child. This is the "classic Flow" that has been around since the earliest
+ * days.
  *
  * ```
  * <T1 data-flows-to="2,3,4,5,6">

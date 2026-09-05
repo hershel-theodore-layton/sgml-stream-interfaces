@@ -31,7 +31,7 @@ interface Element extends ToSGMLStringAsync, Streamable {
    * Must return all assigned data- and aria- attributes and all data- and aria-
    * attributes with a default value. If an attribute has both a default value
    * and an assigned value, the assigned value must be used. If a data- or aria-
-   * attribute has a non arraykey value, either an exception must be thrown, the
+   * attribute has a non-arraykey value, either an exception must be thrown, the
    * value must be cast to an arraykey, or the value must be filtered out.
    */
   public function getDataAndAriaAttributes()[]: dict<string, arraykey>;

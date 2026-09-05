@@ -6,7 +6,7 @@ namespace HTL\SGMLStreamInterfaces;
  */
 interface Snippet {
   /**
-   * Is called during rendering and indicates that you should start your work
+   * Is called during rendering and indicates that you should start the work
    * needed for feedBytesToConsumerAsync. The Awaitable returned by this method
    * may not have resolved before feedBytesToConsumerAsync is called. This
    * method may not be invoked more than once. Implementations are not required

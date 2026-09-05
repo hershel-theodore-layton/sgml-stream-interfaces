@@ -5,12 +5,12 @@ namespace HTL\SGMLStreamInterfaces;
  * @deprecated Use ReusableRenderer instead.
  *
  * Kick-starts the process of rendering an SGML tree to a Consumer. A Renderer
- * may decide to be non-reusable. In which case, it must document as such.
+ * may decide to be non-reusable, in which case it must document this.
  */
 interface Renderer {
   /**
    * Renders an SGML tree to $consumer with $flow. This tree is obtained via
-   * different unspecified means F.e. the constructor or a setter.
+   * different unspecified means, for example, the constructor or a setter.
    */
   public function renderAsync(
     Consumer $consumer,

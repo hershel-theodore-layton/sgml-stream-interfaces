@@ -2,7 +2,7 @@
 namespace HTL\SGMLStreamInterfaces;
 
 /**
- * Wrapper class to kick start the rendering process.
+ * Wrapper class to kick-start the rendering process.
  */
 interface ReusableRenderer {
   /**

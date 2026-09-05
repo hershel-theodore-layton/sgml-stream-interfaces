@@ -3,7 +3,7 @@ namespace HTL\SGMLStreamInterfaces;
 
 /**
  * Represents SGML boolean attributes. The value SET should be rendered as an
- * attribute with no value nor an equals sign. The value NOT_SET should not
+ * attribute with neither a value nor an equals sign. The value NOT_SET should not
  * be rendered at all.
  *
  * ```
