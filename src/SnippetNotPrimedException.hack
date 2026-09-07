@@ -1,9 +1,11 @@
 /** sgml-stream-interfaces is MIT licensed, see /LICENSE. */
 namespace HTL\SGMLStreamInterfaces;
 
+use type Exception;
+
 /**
  * @see Snippet->feedBytesToConsumerAsync()
  */
 interface SnippetNotPrimedException {
-  require extends \Exception;
+  require extends Exception;
 }

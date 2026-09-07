@@ -1,9 +1,11 @@
 /** sgml-stream-interfaces is MIT licensed, see /LICENSE. */
 namespace HTL\SGMLStreamInterfaces;
 
+use namespace HH;
+
 /**
  * This signature can not be changed, because HHVM depends on it.
  */
-final class HHVMSignature implements \HH\MethodAttribute {
+final class HHVMSignature implements HH\MethodAttribute {
   public function __construct(string $_syntax)[] {}
 }
